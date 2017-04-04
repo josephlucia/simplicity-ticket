@@ -1,0 +1,23 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+// SweetAlert
+@import "node_modules/sweetalert2/src/sweetalert2.scss";
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Application
+@import "fonts";
+@import "forms";
+@import "main";
+@import "panels";
+@import "sidebar";
+@import "tables";
+@import "wells";
+@import "widgets";

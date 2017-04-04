@@ -1,0 +1,75 @@
+#app {
+	min-height: calc(100vh - 35px);
+}
+#wrapper {
+  padding-left: 55px;
+}
+#page-content-wrapper {
+  position: relative;
+}
+.login-label {
+  text-align: center;
+  margin: 5px 0 15px 0;
+}
+.nav-list.active a {
+	color: #fff;
+}
+.account-title {
+  margin: 0 0 10px 5px;
+  font-size: 22px;
+}
+.org-name {
+  font-size: 12px;
+  position: absolute;
+  top: 30px;
+}
+.assignee {
+	margin-top: 10px;
+	font-size: 15px;
+}
+.ticket-subject-row {
+  border-bottom: 1px solid #d3e0e9; 
+  padding-bottom: 15px; 
+  margin-bottom: 15px;
+}
+.ticket-subject {
+  font-size: 18px;
+  font-weight: 600;
+}
+.ticket-creator {
+  font-size: 11px;
+}
+.row-spacing {
+	padding: 15px 0 15px;
+	border-bottom: 1px solid #efefef; 
+}
+.search-row {
+	border-bottom: 1px solid #d3e0e9; 
+	padding-bottom: 15px; 
+	margin-bottom: 5px;
+}
+.pagination {
+	margin: 0;
+}
+.arrow {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+}
+.arrow.asc {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid #999;
+}
+.arrow.desc {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #999;
+}
+.footer {
+	margin-right: 15px;
+	text-align: right;
+  font-size: 12px;
+}
