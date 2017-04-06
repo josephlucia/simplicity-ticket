@@ -115,7 +115,7 @@ class Ticket extends Model
      */
     public function getCreatorAttribute()
     {
-        $user = User::find($this->user_id);
+        $user = $this->owner;
         return $user->name ?: 'Orphaned';
     }
 
@@ -149,7 +149,7 @@ class Ticket extends Model
      */
     public function getDetailsButtonAttribute()
     {
-        return auth()->user()->role == 'user' ? '<a href="'.url('/tickets/'.$this->id).'" class="btn btn-info">Details</a>'
+        return $this->owner->role == 'user' ? '<a href="'.url('/tickets/'.$this->id).'" class="btn btn-info">Details</a>'
                                               : '<a href="'.url('/tickets/staff/'.$this->id).'" class="btn btn-info">Details</a>';
     }
 }

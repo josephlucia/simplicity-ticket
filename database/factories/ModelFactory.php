@@ -16,6 +16,7 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     static $password;
 
     return [
+    	'role' => 'user',
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
         'password' => $password ?: $password = bcrypt('secret'),
@@ -23,9 +24,18 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     ];
 });
 
+$factory->define(App\Department::class, function (Faker\Generator $faker) {
+	return [
+		'name' => 'Technology Support'
+	];
+});
+
 $factory->define(App\Ticket::class, function (Faker\Generator $faker) {
 	return [
 		'user_id' => function() {
+			return factory('App\User')->create()->id;
+		},
+		'department_id' => function() {
 			return factory('App\User')->create()->id;
 		},
 		'priority' => 'Normal',
