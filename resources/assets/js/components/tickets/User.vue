@@ -230,7 +230,7 @@
             /**
              * The array tickets sorted if called by the user.
              */
-            tickets: function() {
+            tickets: function () {
                 var data = this.ticketsArray;
                 if(this.sortKey) {
                     return _.orderBy(data, [this.sortKey], [this.sortOrder]);
@@ -299,7 +299,7 @@
             getTickets: function () {
                 var page = this.pagination.current_page;
 
-                axios.get(Sts.url + '/tickets/user/' + this.rows + '/?page=' + page)
+                axios.get(Sts.url + '/tickets/user/' + this.rows + '?page=' + page)
                     .then(response => {
                         this.ticketsArray = response.data.data;
                         this.pagination = response.data;

@@ -40,7 +40,7 @@ class StaffController extends Controller
     }
 
     /**
-     * Display all staf members.
+     * Display all staff members.
      *
      * @return \Illuminate\Http\Response
      */
