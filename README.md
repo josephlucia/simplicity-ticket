@@ -35,7 +35,7 @@ Its allure is in its simplicity with regards to setup, features, and functionali
 
 1. Get the source code
 - Github: Download the ZIP
-- Git: git clone git://github.com/josephlucia/simplicity-ticket.git
+- Git: Git: git clone https://github.com/josephlucia/simplicity-ticket.git
 2. Open the terminal of your web server, navigate to simplicity-ticket and run the following commands:
 - composer install --no-dev -o
 - npm install
